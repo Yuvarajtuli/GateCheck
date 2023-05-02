@@ -1,0 +1,38 @@
+--create table users(
+--ID bigint primary key identity(1,1) not null,
+--orgID bigint not null, 
+--roleID bigint not null,
+--userName nvarchar(150) not null,
+--userEmail nvarchar(255) not null,
+--userPassword nvarchar(max) not null,
+--userMobile nvarchar(20) not null,
+--userCountryCode nvarchar(5) not null,
+--usercreateDate datetime default getdate(),
+--usercurrentStatus bit default 1
+--)
+--go
+--create table roleList(
+--ID bigint primary key identity(1,1) not null,
+--roleName nvarchar(150) not null,
+--roleDescription nvarchar(max) null,
+--roleCreatedBy bigint null,
+--createDate datetime default getdate(),
+--currentStatus bit default 1
+--)
+--go
+--create table Organizations(
+--ID bigint primary key identity(1,1) not null,
+--orgName nvarchar(200) not null,
+--orgEmail nvarchar(255) not null,
+--orgMobile nvarchar(12) not null,
+--orgCountryCode nvarchar(5) not null,
+--orgGST nvarchar(max) null,
+--orgPAN nvarchar(max) null,
+--orgCurrentStatus bit default 1
+--)
+--go
+--create table logHandler(
+--userID bigint not null,
+--loginDateTime datetime default getdate(),
+--logoutDateTime datetime null
+--)
