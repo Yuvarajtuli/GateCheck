@@ -12,8 +12,8 @@ function sendMail($SendName,$SendEmail,$contentData,$subject,$SendCc,$SendBcc,$a
 	$mail->SMTPDebug = 0;
 	$mail->Host = gethostbyname('smtp.gmail.com');
 	$mail->SMTPAuth = true;
-	$mail->Username = 'yuvarajtuli@gmail.com';
-	$mail->Password = 'sysgupcrjyxcvhda';
+	$mail->Username = 'user email';
+	$mail->Password = 'user password key';
 	$mail->SMTPSecure = 'tls';
 	$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 	$mail->Port = 587;
